@@ -54,11 +54,11 @@ sign_msg = [method.toUpperCase(), url.toLowerCase(), sign_headers]
 sign_msg = sign_msg.join('|')
 
 // Import Key-Pairs
-signer = fs.readFileSync('sample-privkey.pem');
-verifier_1 = fs.readFileSync('sample-pubkey.pem');
+signer = fs.readFileSync('./keys/sample-privkey.pem');
+verifier_1 = fs.readFileSync('./keys/sample-pubkey.pem');
 
 // Import other Pub-Key
-verifier_2 = fs.readFileSync('testserver-pub.pem');
+verifier_2 = fs.readFileSync('./keys/testserver-pub.pem');
 
 // Sign message
 createSignature = crypto.createSign('sha256');
