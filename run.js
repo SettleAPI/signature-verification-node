@@ -1,1 +1,1 @@
-require("./verify");
+require("./app/verify");
